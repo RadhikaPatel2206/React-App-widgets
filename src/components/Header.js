@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "./Link";
 
 const Header = () => {
     return (
@@ -6,18 +7,18 @@ const Header = () => {
             className="ui tabular menu"
             style={{ marginTop: "30px", marginBottom: "30px" }}
         >
-            <a className="item" href="/">
+            <Link href="/" className="item">
                 Accordion
-            </a>
-            <a className="item" href="/">
+            </Link>
+            <Link href="/list" className="item">
                 List
-            </a>
-            <a className="item" href="/">
+            </Link>
+            <Link href="/dropdown" className="item">
                 Dropdown
-            </a>
-            <a className="item" href="/">
+            </Link>
+            <Link href="/translate" className="item">
                 Translate
-            </a>
+            </Link>
         </div>
     );
 };
